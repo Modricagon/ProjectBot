@@ -5,4 +5,21 @@
     <TargetFramework>netcoreapp2.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Discord.Net" Version="2.0.1" />
+    <PackageReference Include="Discord.Net.Commands" Version="2.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ProjectBot.Configuration\ProjectBot.Configuration.csproj" />
+    <ProjectReference Include="..\ProjectBot.Domain\ProjectBot.Domain.csproj" />
+    <ProjectReference Include="..\ProjectBot.Logging\ProjectBot.Logging.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Core\token.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>
